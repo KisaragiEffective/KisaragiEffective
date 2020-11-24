@@ -1,6 +1,4 @@
-### Hi there 👋
-- 🌱 I’m currently learning ... How can I use this special feature.
-- Important Notice: *I don't have gift for you.*
+Notice: Currently, out of service due to LTS persistence. (*LTS* doesn't stand for Long-Term Support, you know)
 <!--
 **KisaragiEffective/KisaragiEffective** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
