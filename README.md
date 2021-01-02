@@ -1,4 +1,6 @@
-Notice: Currently, out of service due to LTS persistence. (*LTS* doesn't stand for Long-Term Support, you know)
+Notice:
+- Currently, out of service due to LTS persistence. (*LTS* doesn't stand for Long-Term Support, you know)
+- [kisaragi.ga](https://kisaragi.ga) is my domain.
 
 ----
 
