@@ -3,7 +3,7 @@ Notice:
 - [kisaragi.ga](https://kisaragi.ga) is my domain.
 
 ----
-<img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=blackbracken&layout=compact&hide=html"/>
+<img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KisaragiEffective&layout=compact&hide=html"/>
 
 Make 'em efficient.
 
