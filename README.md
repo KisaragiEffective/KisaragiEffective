@@ -3,9 +3,9 @@ Notice:
 - [kisaragi.ga](https://kisaragi.ga) is my domain.
 
 ----
+<img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=blackbracken&layout=compact&hide=html"/>
 
-より早く、より正確に、より楽に。そして、より自由に。<!-- コメントがHTMLとして実際に転送されるかのテスト。特に意味はない。-->
-
+Make 'em efficient.
 
 ## TODO
 - KisaragiEffective/webmarket
