@@ -7,9 +7,14 @@ Notice:
 
 Make 'em efficient.
 
-## TODO
-- KisaragiEffective/webmarket
-  - Release v1.0.0
+## Products
+### Library
+- [StringsWrapper.php](https://github.com/KisaragiEffective/StringWrappers.php)
+- [dateformat.js](https://github.com/KisaragiEffective/dateformat.js)
+
+### Addon/Plugin
+- [WGTabCompleter](https://github.com/KisaragiEffective/WGTabCompleter)
+
+### Misc
 - KisaragiEffective/Rina
-- KisaragiEffective/Strings-php
-- KisaragiEffective/WorldGuardTabCompleter
+- KisaragiEffective/webmarket
