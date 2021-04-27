@@ -15,3 +15,5 @@ Make 'em efficient.
 - [GiganticMinecraft/SeichiAssist](https://github.com/GiganticMinecraft/SeichiAssist) - as a collaborator
 - [WGTabCompleter](https://github.com/KisaragiEffective/WGTabCompleter)
 
+----
+<small>for trusted user: see [@kisaragieffective/private](https://gigantic.com/KisaragiEffective/private)</small>
