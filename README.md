@@ -16,4 +16,4 @@ Make 'em efficient.
 - [WGTabCompleter](https://github.com/KisaragiEffective/WGTabCompleter)
 
 ----
-<small>for trusted user: see [@kisaragieffective/private](https://gigantic.com/KisaragiEffective/private)</small>
+<small>for trusted user: see [@kisaragieffective/private](https://github.com/KisaragiEffective/private)</small>
