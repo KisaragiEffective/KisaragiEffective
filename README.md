@@ -5,6 +5,10 @@ Notice:
 <img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KisaragiEffective&layout=compact&hide=html" />
 
 Make 'em efficient.
+## Languages
+- 🇯🇵: native
+- 🇬🇧/🇺🇸: intermidate (w/ Google translate)
+- others: via Google translate
 
 ## Repos
 ### Library
