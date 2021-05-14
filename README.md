@@ -2,6 +2,7 @@ Notice:
 - [kisaragi.ga](https://kisaragi.ga) is my domain.
 
 ----
+![GitHub Stats Card](https://github-readme-stats.vercel.app/api?username=KisaragiEffective&show_icons=true&count_private=true)
 <img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KisaragiEffective&layout=compact&hide=html" />
 
 Make 'em efficient.
