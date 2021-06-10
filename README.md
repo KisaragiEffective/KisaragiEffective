@@ -1,6 +1,6 @@
 Notice:
 - [kisaragi.ga](https://kisaragi.ga) is my domain.
-
+- Avatar: from https://picrew.me/image_maker/36849, license: allowed redistribute, modify
 ----
 ![GitHub Stats Card](https://github-readme-stats.vercel.app/api?username=KisaragiEffective&show_icons=true&count_private=true)
 <img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KisaragiEffective&layout=compact&hide=html" />
