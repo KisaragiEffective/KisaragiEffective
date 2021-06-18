@@ -2,10 +2,11 @@ Notice:
 - [kisaragi.ga](https://kisaragi.ga) is my domain.
 - Avatar: from https://picrew.me/image_maker/36849, license: allowed redistribute, modify
 ----
-
-<img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KisaragiEffective&layout=compact&hide=html">
+<div align="right">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KisaragiEffective&layout=compact&hide=html">
 
 <img alt="GitHub Stats Card" src="https://github-readme-stats.vercel.app/api?username=KisaragiEffective&show_icons=true&count_private=true">
+</div>
 
 ## Languages
 - 🇯🇵: native
