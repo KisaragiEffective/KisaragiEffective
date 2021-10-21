@@ -18,6 +18,7 @@ Notice:
 - Python/VBA
 
 ## Repos
+- [gist](https://gist.github.com/KisaragiEffective)
 ### Library
 - [StringsWrapper.php](https://github.com/KisaragiEffective/StringWrappers.php)
 - [dateformat.js](https://github.com/KisaragiEffective/dateformat.js)
