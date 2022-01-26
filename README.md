@@ -1,20 +1,17 @@
 Notice:
-- [kisaragi.ga](https://kisaragi.ga) is my domain.
+- [ksrgte.ch](https://services.ksrgte.ch) is my domain.
 - Avatar: from https://picrew.me/image_maker/36849, license: allowed redistribute, modify
 ----
-<div align="right">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KisaragiEffective&layout=compact&hide=html">
-
-<img alt="GitHub Stats Card" src="https://github-readme-stats.vercel.app/api?username=KisaragiEffective&show_icons=true&count_private=true">
-</div>
-
+[![github stats](https://github-readme-stats.vercel.app/api?username=KisaragiEffective&count_private=true&show_icons=true&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
+[![languages](https://github-readme-stats.vercel.app/api/top-langs/?username=KisaragiEffective&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 ## Languages
 - 🇯🇵: native
-- 🇬🇧/🇺🇸: intermidate
-- others: via Google translate
+- 🇬🇧/🇺🇸: intermidate (not business level)
+- others: via machine translate
 
 ## Toolchains
-- Java/Kotlin/Scala/Visual Basic/C#/PHP/Ruby
+- Java/Kotlin/Scala/
+- Visual Basic/C#/PHP/Ruby
 - Python/VBA
 
 ## Repos
@@ -26,7 +23,7 @@ Notice:
 
 ### Addon/Plugin
 #### for Bukkit family
-- [GiganticMinecraft/SeichiAssist](https://github.com/GiganticMinecraft/SeichiAssist) - as a collaborator
+- [GiganticMinecraft/SeichiAssist](https://github.com/GiganticMinecraft/SeichiAssist)
 - [WGTabCompleter](https://github.com/KisaragiEffective/WGTabCompleter)
 
 #### for FabricMC
