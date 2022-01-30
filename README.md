@@ -32,7 +32,9 @@ I'd like to learn them even if I have not been used.
 - apache configuration, Laravel: hobby level
 
 ### Other tools
-- **[git](https://git-scm.com/)**, **[GitHub](https://github.com)**, **[Ubuntu](https://ubuntu.com/)**, [FreeBSD](https://www.freebsd.org/ja/), [bash](https://linuxjm.osdn.jp/html/GNU_bash/man1/bash.1.html), [PowerShell](https://docs.microsoft.com/ja-jp/powershell/), usage of command-line tools: hobby level
+- **[git](https://git-scm.com/)**, **[GitHub](https://github.com)**: hobby level
+- **[Ubuntu](https://ubuntu.com/)**, [FreeBSD](https://www.freebsd.org/ja/): hobby level
+- [bash](https://linuxjm.osdn.jp/html/GNU_bash/man1/bash.1.html), [PowerShell](https://docs.microsoft.com/ja-jp/powershell/), usage of command-line tools: hobby level
 
 ## Properties
 - typing speed
