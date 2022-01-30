@@ -10,20 +10,26 @@ Notice:
 - others: via machine translate
 
 ## Toolchains
-- Java/Kotlin/Scala/
+- Java/Kotlin/Scala
 - Visual Basic/C#/PHP/Ruby
 - Python/VBA
 
 ## Repos
 - [gist](https://gist.github.com/KisaragiEffective)
+
 ### Library
-- [StringsWrapper.php](https://github.com/KisaragiEffective/StringWrappers.php)
 - [dateformat.js](https://github.com/KisaragiEffective/dateformat.js)
 - [scala-simd-wrapper](https://github.com/KisaragiEffective/scala-simd-wrapper)
+
+### Product
+- [GiganticMinecraft/SeichiRanking](https://github.com/GiganticMinecraft/SeichiRanking) - maintenance
+- [KisaragiEffective/webhook-handler](https://github.com/KisaragiEffective/webhook-handler)
+- [KisaragiEffective/portfolio.ksrgte.ch](https://github.com/KisaragiEffective/portfolio.ksrgte.ch)
 
 ### Addon/Plugin
 #### for Bukkit family
 - [GiganticMinecraft/SeichiAssist](https://github.com/GiganticMinecraft/SeichiAssist)
+- [GiganticMinecraft/SeichiAssistBE](https://github.com/GiganticMinecraft/SeichiAssistBE)
 - [WGTabCompleter](https://github.com/KisaragiEffective/WGTabCompleter)
 
 #### for FabricMC
