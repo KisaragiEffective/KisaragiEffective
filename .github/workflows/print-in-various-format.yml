@@ -1,0 +1,48 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the live branch
+  push:
+    branches: [ live ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      - name: prepare output directory
+        run: |
+          mkdir output
+      - name: set current datetime
+          echo "CURDATETIME=$(date +%Y%m%d_%H%M%S)" >> $GITHUB_ENV
+      - name: Convert into PDF
+        uses: docker://pandoc/latex:2.9
+        with:
+          args: --output=output/README_${{env.CURDAYTIME}}.pdf README.md
+      - name: Convert into HTML
+        uses: docker://pandoc/latex:2.9
+        with:
+          args: --output=output/README_${{env.CURDAYTIME}}.html README.md
+      - name: Convert into DOCX
+        uses: docker://pandoc/latex:2.9
+        with:
+          args: --output=output/README_${{env.CURDAYTIME}}.docx README.md
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: 'output/*'
+          token: ${{ secrets.RELEASE_TOKEN }}
+          prerelease: true
+          name: files @ ${{ env.CURDATETIME }}
+      
