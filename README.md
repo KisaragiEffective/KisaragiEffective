@@ -1,7 +1,5 @@
-Notice:
-- [ksrgte.ch](https://services.ksrgte.ch) is my domain.
-- Avatar: from https://picrew.me/image_maker/36849, license: allowed redistribute, modify
-----
+# KisaragiEffective
+## Stats
 [![github stats](https://github-readme-stats.vercel.app/api?username=KisaragiEffective&count_private=true&show_icons=true&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 [![languages](https://github-readme-stats.vercel.app/api/top-langs/?username=KisaragiEffective&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 
@@ -37,5 +35,7 @@ Notice:
 #### for FabricMC
 - [sign-picture-ported](https://github.com/KisaragiEffective/sign-picture-ported) - alternate version of [Team-Fruit/SignPicture](https://github.com/Team-Fruit/SignPicture)
 
-----
-<small>for trusted user: see [@kisaragieffective/private](https://github.com/KisaragiEffective/private)</small>
+## Notes
+- [ksrgte.ch](https://services.ksrgte.ch) is my domain.
+- Icon: from [picrew.me](https://picrew.me/image_maker/36849), license: allowed redistribute, modify
+- <small>for trusted user: see [@KisaragiEffective/private](https://github.com/KisaragiEffective/private)</small>
