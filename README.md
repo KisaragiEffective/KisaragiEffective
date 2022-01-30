@@ -4,15 +4,42 @@
 [![languages](https://github-readme-stats.vercel.app/api/top-langs/?username=KisaragiEffective&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 
 ## Languages
-- 🇯🇵: native
-- 🇬🇧/🇺🇸: intermidiate (not business level)
+- Japanese: native
+- English: intermidiate (not business level)
 - other languages: via machine translate
 
-## Toolchains
+## Skills
+I'd like to learn them even if I have not been used.
+
 ### Programming languages
 - Java, Kotlin, Scala: production level
-- VBA, C#, PHP, Ruby: hobby level
-- Python: not so experienced
+- VBA, C#, PHP, Ruby, Rust, JavaScript, TypeScript: hobby level
+- Python, [Dirt](https://dart.dev/): not so experienced
+
+### Query languages
+- SQL: production level
+- Excel(\*1), [GraphQL](https://graphql.org/): hobby level
+
+\*1: can use the functions without any inconvenience
+
+### Document system
+- Javadoc, Scaladoc: production level
+- Microsoft Word(\*2), [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki), Markdown: hobby level
+
+\*2: can typing and formatting without any inconvenience
+
+### HTTP
+- apache configuration, Laravel: hobby level
+
+### Other tools
+- [Ubuntu](https://ubuntu.com/), [FreeBSD](https://www.freebsd.org/ja/), [bash](https://linuxjm.osdn.jp/html/GNU_bash/man1/bash.1.html), [PowerShell](https://docs.microsoft.com/ja-jp/powershell/), usage of command-line tools: hobby level
+
+## Properties
+- typing speed
+  - up to 5.5 type/sec
+  - can type 700 Japanese characters in 10 minutes
+- have access to JetBrains products via [open-source license](https://www.jetbrains.com/ja-jp/community/opensource)
+  - applied repository: [GiganticMinecraft/SeichiAssist](https://github.com/GiganticMinecraft/SeichiAssist)
 
 ## Repos
 - [gist](https://gist.github.com/KisaragiEffective)
@@ -39,3 +66,4 @@
 - [ksrgte.ch](https://services.ksrgte.ch) is my domain.
 - Icon: from [picrew.me](https://picrew.me/image_maker/36849), license: allowed redistribute, modify
 - <small>for trusted user: see [@KisaragiEffective/private](https://github.com/KisaragiEffective/private)</small>
+- This README is validated by [GitHubActions](https://github.com/KisaragiEffective/KisaragiEffective/blob/live/.github/workflows/markdown-lint.yml).

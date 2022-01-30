@@ -15,7 +15,7 @@ MD003:
 # MD004/ul-style - Unordered list style
 MD004:
   # List style
-  style: "sublist"
+  style: "consistent"
 
 # MD005/list-indent - Inconsistent indentation for list items at the same level
 MD005: true
@@ -59,7 +59,7 @@ MD012:
 # MD013/line-length - Line length
 MD013:
   # Number of characters
-  line_length: 200
+  line_length: 300
   # Number of characters for headings
   heading_line_length: 80
   # Number of characters for code blocks
