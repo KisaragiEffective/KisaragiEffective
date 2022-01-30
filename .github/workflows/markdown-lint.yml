@@ -1,8 +1,11 @@
 name: Markdown lint
 on:
   push:
-    branches: [ live ]
+    paths:
+      - "**.md"
   pull_request:
+    paths:
+      - "**.md"
     branches: [ live ]
 
   workflow_dispatch:
