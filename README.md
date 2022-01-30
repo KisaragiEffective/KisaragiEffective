@@ -4,15 +4,17 @@ Notice:
 ----
 [![github stats](https://github-readme-stats.vercel.app/api?username=KisaragiEffective&count_private=true&show_icons=true&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 [![languages](https://github-readme-stats.vercel.app/api/top-langs/?username=KisaragiEffective&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
+
 ## Languages
 - 🇯🇵: native
-- 🇬🇧/🇺🇸: intermidate (not business level)
-- others: via machine translate
+- 🇬🇧/🇺🇸: intermidiate (not business level)
+- other languages: via machine translate
 
 ## Toolchains
-- Java/Kotlin/Scala
-- Visual Basic/C#/PHP/Ruby
-- Python/VBA
+### Programming languages
+- Java, Kotlin, Scala: production level
+- VBA, C#, PHP, Ruby: hobby level
+- Python: not so experienced
 
 ## Repos
 - [gist](https://gist.github.com/KisaragiEffective)
@@ -28,7 +30,7 @@ Notice:
 
 ### Addon/Plugin
 #### for Bukkit family
-- [GiganticMinecraft/SeichiAssist](https://github.com/GiganticMinecraft/SeichiAssist)
+- [GiganticMinecraft/SeichiAssist](https://github.com/GiganticMinecraft/SeichiAssist) - core maintainer
 - [GiganticMinecraft/SeichiAssistBE](https://github.com/GiganticMinecraft/SeichiAssistBE)
 - [WGTabCompleter](https://github.com/KisaragiEffective/WGTabCompleter)
 
