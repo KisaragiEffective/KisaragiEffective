@@ -31,7 +31,8 @@ jobs:
           mkdir output
       - name: set current datetime
         run: |
-          echo "CURDATETIME=$(date +%Y%m%d_%H%M%S)" >> $GITHUB_ENV
+          export CURDATETIME="$(date +%Y%m%d_%H%M%S)"
+          echo "::set-env name=CURDATETIME::$CURDATETIME"
       - name: Convert into PDF
         uses: docker://pandoc/latex:2.9
         with:
