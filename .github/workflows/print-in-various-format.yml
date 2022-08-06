@@ -30,21 +30,22 @@ jobs:
         run: |
           mkdir output
       - name: set current datetime
+        id: datetime
         run: |
-          export CURDATETIME="$(date +%Y%m%d_%H%M%S)"
-          echo "::set-env name=CURDATETIME::$CURDATETIME"
+          CURDATETIME="$(date +%Y%m%d_%H%M%S)"
+          echo "::set-output name=dt::$CURDATETIME"
       - name: Convert into PDF
         uses: docker://pandoc/latex:2.19
         with:
-          args: --output=output/README_${{env.CURDAYTIME}}.pdf README.md
+          args: --output=output/README_${{ steps.datetime.outputs.dt }}.pdf README.md
       - name: Convert into HTML
         uses: docker://pandoc/latex:2.19
         with:
-          args: --output=output/README_${{env.CURDAYTIME}}.html README.md
+          args: --output=output/README_${{ steps.datetime.outputs.dt }}.html README.md
       - name: Convert into DOCX
         uses: docker://pandoc/latex:2.19
         with:
-          args: --output=output/README_${{env.CURDAYTIME}}.docx README.md
+          args: --output=output/README_${{ steps.datetime.outputs.dt }}.docx README.md
       - name: Push tag
         id: tag_version
         uses: mathieudutour/github-tag-action@v6.0
