@@ -32,6 +32,7 @@ jobs:
       - name: set current datetime
         id: datetime
         run: |
+          TZ='Asia/Tokyo'
           CURDATETIME="$(date +%Y%m%d_%H%M%S)"
           echo "::set-output name=dt::$CURDATETIME"
       - name: Convert into PDF
