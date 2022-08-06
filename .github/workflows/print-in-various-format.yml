@@ -59,7 +59,7 @@ jobs:
         with:
           artifacts: 'output/*'
           token: ${{ secrets.GITHUB_TOKEN }}
-          prerelease: true
+          prerelease: false
           tag: ${{ steps.tag_version.outputs.new_tag }}
           name: Release ${{ steps.tag_version.outputs.new_tag }}
           body: ${{ steps.tag_version.outputs.changelog }}
