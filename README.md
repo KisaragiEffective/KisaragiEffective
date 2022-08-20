@@ -9,39 +9,10 @@
 - other languages: via machine translate
 
 ## Skills
-I'd like to learn them even if I have not been used.
-
-### Programming languages
-- Java, Kotlin, Scala: production level
-- VBA, C#, PHP, Ruby, Rust, JavaScript, TypeScript: hobby level
-- Python, [Dirt](https://dart.dev/): not so experienced
-
-### Query languages
-- SQL: production level
-- Excel(\*1), [GraphQL](https://graphql.org/): hobby level
-
-\*1: can use the functions without any inconvenience
-
-### Document system
-- Javadoc, Scaladoc: production level
-- Microsoft Word(\*2), [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki), Markdown: hobby level
-
-\*2: can typing and formatting without any inconvenience
-
-### HTTP
-- apache configuration, Laravel: hobby level
-
-### Other tools
-- **[git](https://git-scm.com/)**, **[GitHub](https://github.com)**: hobby level
-- **[Ubuntu](https://ubuntu.com/)**, [FreeBSD](https://www.freebsd.org/ja/): hobby level
-- [bash](https://linuxjm.osdn.jp/html/GNU_bash/man1/bash.1.html), [PowerShell](https://docs.microsoft.com/ja-jp/powershell/), usage of command-line tools: hobby level
+This section is split to [SKILL.md](./docs/en/SKILL.md).
 
 ## Properties
-- typing speed
-  - up to 5.5 type/sec
-  - can type 700 Japanese characters in 10 minutes
-- have access to JetBrains products via [open-source license](https://www.jetbrains.com/ja-jp/community/opensource)
-  - applied repository: [GiganticMinecraft/SeichiAssist](https://github.com/GiganticMinecraft/SeichiAssist)
+This section is split to [PROPERTY.md](./docs/en/PROPERTY.md).
 
 ## Repos
 - [gist](https://gist.github.com/KisaragiEffective)
@@ -51,18 +22,7 @@ I'd like to learn them even if I have not been used.
 - [scala-simd-wrapper](https://github.com/KisaragiEffective/scala-simd-wrapper)
 
 ### Product
-- [GiganticMinecraft/SeichiRanking](https://github.com/GiganticMinecraft/SeichiRanking) - maintenance
-- [KisaragiEffective/webhook-handler](https://github.com/KisaragiEffective/webhook-handler)
-- [KisaragiEffective/portfolio.ksrgte.ch](https://github.com/KisaragiEffective/portfolio.ksrgte.ch)
-
-### Addon/Plugin
-#### for Bukkit family
-- [GiganticMinecraft/SeichiAssist](https://github.com/GiganticMinecraft/SeichiAssist) - core maintainer
-- [GiganticMinecraft/SeichiAssistBE](https://github.com/GiganticMinecraft/SeichiAssistBE)
-- [WGTabCompleter](https://github.com/KisaragiEffective/WGTabCompleter)
-
-#### for FabricMC
-- [sign-picture-ported](https://github.com/KisaragiEffective/sign-picture-ported) - alternate version of [Team-Fruit/SignPicture](https://github.com/Team-Fruit/SignPicture)
+This section is split to [PRODUCT.md](./docs/en/PRODUCT.md).
 
 ## Notes
 - [ksrgte.ch](https://services.ksrgte.ch) is my domain.
