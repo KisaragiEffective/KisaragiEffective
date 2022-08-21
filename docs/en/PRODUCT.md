@@ -1,4 +1,5 @@
 # Product
+<!-- START -->
 - [GiganticMinecraft/SeichiRanking](https://github.com/GiganticMinecraft/SeichiRanking) - maintenance
 - [KisaragiEffective/webhook-handler](https://github.com/KisaragiEffective/webhook-handler)
 - [KisaragiEffective/portfolio.ksrgte.ch](https://github.com/KisaragiEffective/portfolio.ksrgte.ch)
@@ -11,3 +12,4 @@
 
 ### for FabricMC
 - [sign-picture-ported](https://github.com/KisaragiEffective/sign-picture-ported) - alternate version of [Team-Fruit/SignPicture](https://github.com/Team-Fruit/SignPicture)
+<!-- END -->

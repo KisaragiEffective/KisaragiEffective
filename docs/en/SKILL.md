@@ -1,6 +1,7 @@
 # Skill
 I'd like to learn them even if I have not been used.
 
+<!-- START -->
 ## Programming languages
 - Java, Kotlin, Scala: production level
 - VBA, C#, PHP, Ruby, Rust, JavaScript, TypeScript: hobby level
@@ -25,3 +26,4 @@ I'd like to learn them even if I have not been used.
 - **[git](https://git-scm.com/)**, **[GitHub](https://github.com)**: hobby level
 - **[Ubuntu](https://ubuntu.com/)**, [FreeBSD](https://www.freebsd.org/ja/): hobby level
 - [bash](https://linuxjm.osdn.jp/html/GNU_bash/man1/bash.1.html), [PowerShell](https://docs.microsoft.com/ja-jp/powershell/), usage of command-line tools: hobby level
+<!-- END -->
