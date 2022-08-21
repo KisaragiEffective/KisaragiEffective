@@ -36,18 +36,30 @@ jobs:
           export TZ='Asia/Tokyo'
           CURDATETIME="$(date +%Y%m%d_%H%M%S)"
           echo "::set-output name=dt::$CURDATETIME"
+        # TODO: このステップを独立したアクションに分割して依存させる
+      - name: Download preprocessor
+        env:
+          PREPROCESSOR_VERSION: "0.1.2"
+        run: |
+          ./fetch_preprocessor.sh
+      - name: Run preprocessor
+        run: |
+          ./markdown-template-preprocessor -i ./README.template.md -o ./output/README.md -m static
       - name: Convert into PDF
         uses: docker://pandoc/latex:2.19
         with:
-          args: --output=output/README_${{ steps.datetime.outputs.dt }}.pdf README.md
+          args: --output=output/README_${{ steps.datetime.outputs.dt }}.pdf output/README.md
       - name: Convert into HTML
         uses: docker://pandoc/latex:2.19
         with:
-          args: --output=output/README_${{ steps.datetime.outputs.dt }}.html README.md
+          args: --output=output/README_${{ steps.datetime.outputs.dt }}.html output/README.md
       - name: Convert into DOCX
         uses: docker://pandoc/latex:2.19
         with:
-          args: --output=output/README_${{ steps.datetime.outputs.dt }}.docx README.md
+          args: --output=output/README_${{ steps.datetime.outputs.dt }}.docx output/README.md
+      - name: Eliminate intermediate markdown
+        run:
+          rm output/README.md
       - name: Push tag
         id: tag_version
         uses: mathieudutour/github-tag-action@v6.0
