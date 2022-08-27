@@ -1,0 +1,51 @@
+name: SHA512 check
+on:
+  pull_request_target:
+    branches:
+      - live
+    types:
+      - ready_for_review
+      - opened
+      - reopened
+      - synchronize
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    name: Check hash
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Download preprocessor
+        env:
+          PREPROCESSOR_VERSION: "0.1.2"
+        run: |
+          ./fetch_preprocessor.sh
+      - name: make temporary
+        run:
+          mkdir output
+      - name: Run preprocessor
+        run: |
+          ./markdown-template-preprocessor -i ./README.template.md -o ./output/README.md -m dynamic
+      - name: Compare hash
+        id: compare-hash
+        run: |
+          current_hash=$(sha512sum README.md | cut -f1 -d ' ')
+          new_hash=$(sha512sum ./output/README.md | cut -f1 -d ' ')
+          if [[ $current_hash == $new_hash ]]; then
+            output="Hash check: OK"
+          else
+            output="Hash check: NG"
+          fi
+          echo "::set-output name=comment::$output"
+
+      - name: Comment
+        uses: thollander/actions-comment-pull-request@v1
+        with:
+          message: |
+            ${{ steps.compare-hash.outputs.comment }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
