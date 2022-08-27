@@ -1,5 +1,6 @@
 # KisaragiEffective
 ## Stats
+
 [![github stats](https://github-readme-stats.vercel.app/api?username=KisaragiEffective&count_private=true&show_icons=true&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 [![languages](https://github-readme-stats.vercel.app/api/top-langs/?username=KisaragiEffective&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 
@@ -9,10 +10,10 @@
 - other languages: via machine translate
 
 ## Skills
-This section is split to [SKILL.md](./docs/en/SKILL.md).
+This section is migrated. Please see [SKILL.md](./docs/en/SKILL.md)
 
 ## Properties
-This section is split to [PROPERTY.md](./docs/en/PROPERTY.md).
+This section is migrated. Please see [PROPERTY.md](./docs/en/PROPERTY.md)
 
 ## Repos
 - [gist](https://gist.github.com/KisaragiEffective)
@@ -22,7 +23,7 @@ This section is split to [PROPERTY.md](./docs/en/PROPERTY.md).
 - [scala-simd-wrapper](https://github.com/KisaragiEffective/scala-simd-wrapper)
 
 ### Product
-This section is split to [PRODUCT.md](./docs/en/PRODUCT.md).
+This section is migrated. Please see [PRODUCT.md](./docs/en/PRODUCT.md)
 
 ## Notes
 - [ksrgte.ch](https://services.ksrgte.ch) is my domain.

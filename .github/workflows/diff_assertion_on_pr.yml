@@ -36,9 +36,12 @@ jobs:
         run: |
           current_hash=$(sha512sum README.md | cut -f1 -d ' ')
           new_hash=$(sha512sum ./output/README.md | cut -f1 -d ' ')
+          echo "current: $current_hash"
+          echo "new: $new_hash"
           if [[ $current_hash == $new_hash ]]; then
             output="Hash check: OK"
           else
+            diff README.md ./output/README.md
             output="Hash check: NG"
           fi
           echo "::set-output name=comment::$output"
