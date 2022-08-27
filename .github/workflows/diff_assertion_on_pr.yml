@@ -39,6 +39,7 @@ jobs:
           if [[ $current_hash == $new_hash ]]; then
             output="Hash check: OK"
           else
+            diff README.md ./output/README.md
             output="Hash check: NG"
           fi
           echo "::set-output name=comment::$output"
