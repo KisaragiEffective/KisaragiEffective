@@ -9,10 +9,10 @@
 - other languages: via machine translate
 
 ## Skills
-This section is split to [SKILL.md](./docs/en/SKILL.md).
+{{link or include|./docs/en/SKILL.md}}
 
 ## Properties
-This section is split to [PROPERTY.md](./docs/en/PROPERTY.md).
+{{link or include|./docs/en/PROPERTY.md}}
 
 ## Repos
 - [gist](https://gist.github.com/KisaragiEffective)
@@ -22,7 +22,7 @@ This section is split to [PROPERTY.md](./docs/en/PROPERTY.md).
 - [scala-simd-wrapper](https://github.com/KisaragiEffective/scala-simd-wrapper)
 
 ### Product
-This section is split to [PRODUCT.md](./docs/en/PRODUCT.md).
+{{link or include|./docs/en/PRODUCT.md}}
 
 ## Notes
 - [ksrgte.ch](https://services.ksrgte.ch) is my domain.
