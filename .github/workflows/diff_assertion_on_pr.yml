@@ -1,17 +1,9 @@
 name: SHA512 check
 on:
-  pull_request_target:
-    branches:
-      - live
-    types:
-      - ready_for_review
-      - opened
-      - reopened
-      - synchronize
   pull_request:
     branches:
       - live
-  push:
+
 permissions:
   contents: read
   pull-requests: write
