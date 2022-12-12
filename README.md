@@ -60,9 +60,18 @@ query {
 }
 ```
 
-**jq**
+**bash**
 ```shell
-jq '[[.data.viewer.repositories.nodes[] | .languages.edges[] | {"key": .node.name, "value": .size}] | group_by(.key)[] | {(.[0].key): [.[] | .value] | add}] | reduce .[] as $item ({}; . * $item) | to_entries | sort_by(-.value) | from_entries' < input.json
+# https://docs.github.com/ja/graphql/overview/explorer に上のGraphQLクエリをコピーしてペースト後、実行して出力をCtrl+A、Ctrl+C後以下のコマンドを実行
+xclip -sel clip -o | \
+  jq '[[.data.user.repositories.nodes[] | .languages.edges[] | {"key": .node.name, "value": .size}] | group_by(.key)[] | {(.[0].key): [.[] | .value] | add}] | reduce .[] as $item ({}; . * $item) | to_entries | sort_by(-.value) | from_entries'
+```
+or
+```shell
+readonly GH_PAT="please input PAT"
+# 上のGraphQLクエリをコピーしておく
+jq -n --arg x "$(xclip -sel clip -o)" '{ "query": $x }' | \
+  curl -H "Authorization: $GH_PAT" -H "User-Agent: KisaragiEffective/KisaragiEffective.LanguageStatistics (Runned by $(curl -H "Authorization: $GH_PAT" https://api.github.com/ -H "Accept: application/vnd.github+json"  https://api.github.com/user | jq '.login')'s token, code is from https://github.com/KisaragiEffective/KisaragiEffective)" -d@- https://api.github.com/graphql | jq '[[.data.user.repositories.nodes[] | .languages.edges[] | {"key": .node.name, "value": .size}] | group_by(.key)[] | {(.[0].key): [.[] | .value] | add}] | reduce .[] as $item ({}; . * $item) | to_entries | sort_by(-.value) | from_entries'
 ```
 </details>
 
