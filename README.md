@@ -6,7 +6,8 @@
 
 ### Bytes of code in this account
 
-(As of 2022-12-14)
+As of 2022-12-14:
+
 ```json
 {
   "Kotlin": 575633,
