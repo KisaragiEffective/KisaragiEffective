@@ -6,22 +6,25 @@
 
 ### Bytes of code in this account
 
-(As of 2022-09-03)
+(As of 2022-12-14)
 ```json
 {
-  "Kotlin": 522123,
-  "Rust": 334268,
+  "Kotlin": 575633,
+  "Rust": 355909,
+  "JavaScript": 256181,
+  "TypeScript": 174825,
+  "HTML": 117376,
   "PHP": 90023,
-  "Java": 61007,
-  "HTML": 32430,
-  "Scala": 16113,
+  "Java": 65213,
+  "SCSS": 65070,
+  "Scala": 16115,
   "Blade": 11591,
-  "Shell": 4730,
-  "JavaScript": 2517,
-  "CSS": 1296,
+  "C#": 9590,
+  "Shell": 5123,
+  "CSS": 1528,
+  "PowerShell": 779,
   "Dockerfile": 748,
-  "Procfile": 52,
-  "SCSS": 3
+  "Procfile": 52
 }
 ```
 
@@ -53,6 +56,7 @@ query {
       pageInfo {
         endCursor
         startCursor
+        hasNextPage
       }
       totalCount
     }
@@ -61,18 +65,8 @@ query {
 ```
 
 **bash**
-```shell
-# https://docs.github.com/ja/graphql/overview/explorer に上のGraphQLクエリをコピーしてペースト後、実行して出力をCtrl+A、Ctrl+C後以下のコマンドを実行
-xclip -sel clip -o | \
-  jq '[[.data.user.repositories.nodes[] | .languages.edges[] | {"key": .node.name, "value": .size}] | group_by(.key)[] | {(.[0].key): [.[] | .value] | add}] | reduce .[] as $item ({}; . * $item) | to_entries | sort_by(-.value) | from_entries'
-```
-or
-```shell
-readonly GH_PAT="please input PAT"
-# 上のGraphQLクエリをコピーしておく
-jq -n --arg x "$(xclip -sel clip -o)" '{ "query": $x }' | \
-  curl -H "Authorization: $GH_PAT" -H "User-Agent: KisaragiEffective/KisaragiEffective.LanguageStatistics (Runned by $(curl -H "Authorization: $GH_PAT" https://api.github.com/ -H "Accept: application/vnd.github+json"  https://api.github.com/user | jq '.login')'s token, code is from https://github.com/KisaragiEffective/KisaragiEffective)" -d@- https://api.github.com/graphql | jq '[[.data.user.repositories.nodes[] | .languages.edges[] | {"key": .node.name, "value": .size}] | group_by(.key)[] | {(.[0].key): [.[] | .value] | add}] | reduce .[] as $item ({}; . * $item) | to_entries | sort_by(-.value) | from_entries'
-```
+see `scripts/language_bytes.sh`.
+
 </details>
 
 ## Languages

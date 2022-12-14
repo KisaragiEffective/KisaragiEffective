@@ -6,22 +6,25 @@
 
 ### Bytes of code in this account
 
-(As of 2022-09-03)
+(As of 2022-12-14)
 ```json
 {
-  "Kotlin": 522123,
-  "Rust": 334268,
+  "Kotlin": 575633,
+  "Rust": 355909,
+  "JavaScript": 256181,
+  "TypeScript": 174825,
+  "HTML": 117376,
   "PHP": 90023,
-  "Java": 61007,
-  "HTML": 32430,
-  "Scala": 16113,
+  "Java": 65213,
+  "SCSS": 65070,
+  "Scala": 16115,
   "Blade": 11591,
-  "Shell": 4730,
-  "JavaScript": 2517,
-  "CSS": 1296,
+  "C#": 9590,
+  "Shell": 5123,
+  "CSS": 1528,
+  "PowerShell": 779,
   "Dockerfile": 748,
-  "Procfile": 52,
-  "SCSS": 3
+  "Procfile": 52
 }
 ```
 
@@ -53,6 +56,7 @@ query {
       pageInfo {
         endCursor
         startCursor
+        hasNextPage
       }
       totalCount
     }
@@ -60,10 +64,9 @@ query {
 }
 ```
 
-**jq**
-```shell
-jq '[[.data.viewer.repositories.nodes[] | .languages.edges[] | {"key": .node.name, "value": .size}] | group_by(.key)[] | {(.[0].key): [.[] | .value] | add}] | reduce .[] as $item ({}; . * $item) | to_entries | sort_by(-.value) | from_entries' < input.json
-```
+**bash**
+see `scripts/language_bytes.sh`.
+
 </details>
 
 ## Languages
