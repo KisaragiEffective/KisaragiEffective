@@ -154,7 +154,7 @@ MD032: false
 # MD033/no-inline-html - Inline HTML
 MD033:
   # Allowed elements
-  allowed_elements: [ "small", "div", "span" ] # GitHub-flavored markdown allows these HTML element
+  allowed_elements: [ "small", "div", "span", "details", "summary" ] # GitHub-flavored markdown allows these HTML element
 
 # MD034/no-bare-urls - Bare URL used
 MD034: true
