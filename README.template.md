@@ -30,7 +30,8 @@
 
 <details><summary>Method</summary>
 
-**GraphQL query**
+#### GraphQL query
+
 ```graphql
 query { 
   user(login: "KisaragiEffective") { 
@@ -64,7 +65,7 @@ query {
 }
 ```
 
-**bash**
+#### Shell Script
 see `scripts/language_bytes.sh`.
 
 </details>
