@@ -6,20 +6,12 @@ fi
 
 build_query() {
   if [[ -z "$next_cursor" ]]; then
-    printf 'query { \nuser(login: \"KisaragiEffective\") { \nlogin\nrepositories(first: 100, isFork: false, privacy: PUBLIC) {\nnodes {\nname\nprimaryLanguage {\nname\n}\nlanguages(first: 100) {\nedges {\nnode {\nname\ncolor\n}\nsize\n}\n}\n\n}\ntotalDiskUsage\npageInfo {\nendCursor\nstartCursor\nhasNextPage\n}\ntotalCount\n}\n}\n}'
+    printf 'query { \nviewer { \nlogin\nrepositories(first: 100, isFork: false, privacy: PUBLIC) {\nnodes {\nname\nprimaryLanguage {\nname\n}\nlanguages(first: 100) {\nedges {\nnode {\nname\ncolor\n}\nsize\n}\n}\n\n}\ntotalDiskUsage\npageInfo {\nendCursor\nstartCursor\nhasNextPage\n}\ntotalCount\n}\n}\n}'
   else
-    printf 'query { \nuser(login: \"KisaragiEffective\") { \nlogin\nrepositories(first: 100, isFork: false, privacy: PUBLIC, after: '
+    printf 'query { \nviewer { \nlogin\nrepositories(first: 100, isFork: false, privacy: PUBLIC, after: '
     printf '"%s"' "$next_cursor"
     printf ') {\nnodes {\nname\nprimaryLanguage {\nname\n}\nlanguages(first: 100) {\nedges {\nnode {\nname\ncolor\n}\nsize\n}\n}\n\n}\ntotalDiskUsage\npageInfo {\nendCursor\nstartCursor\nhasNextPage\n}\ntotalCount\n}\n}\n}'
   fi
-}
-
-get_current_user() {
-  curl -H "Authorization: Bearer $GH_PAT" \
-    -H "Accept: application/vnd.github+json" \
-    -H "User-Agent: KisaragiEffective/KisaragiEffective.LanguageStatistics" \
-    https://api.github.com/user | \
-  jq '.login'
 }
 
 merge_response() {
@@ -29,7 +21,7 @@ merge_response() {
 
 do_request() {
   curl -H "Authorization: Bearer $GH_PAT" \
-    -H "User-Agent: KisaragiEffective/KisaragiEffective.LanguageStatistics (Runned by $(get_current_user)'s token, code is from https://github.com/KisaragiEffective/KisaragiEffective)" \
+    -H "User-Agent: KisaragiEffective/KisaragiEffective.LanguageStatistics (code is from https://github.com/KisaragiEffective/KisaragiEffective)" \
     -d@- \
     https://api.github.com/graphql
 }
