@@ -3,9 +3,11 @@ on:
   push:
     paths:
       - "**.md"
+      - ".github/workflows/markdown-lint.yml"
   pull_request:
     paths:
       - "**.md"
+      - ".github/workflows/markdown-lint.yml"
     branches: [ live ]
 
   workflow_dispatch:
@@ -22,5 +24,5 @@ jobs:
       - name: Markdown Linting Action
         uses: avto-dev/markdown-lint@v1.5.0
         with:
-          args: './README.md'
+          args: './**/*.md'
           config: './.github/markdown-lint-config.yml'
