@@ -46,15 +46,15 @@ jobs:
         run: |
           ./markdown-template-preprocessor -i ./README.template.md -o ./output/README.md -m static
       - name: Convert into PDF
-        uses: docker://pandoc/latex:2.19
+        uses: docker://pandoc/latex:3.0
         with:
           args: --output=output/README_${{ steps.datetime.outputs.dt }}.pdf output/README.md
       - name: Convert into HTML
-        uses: docker://pandoc/latex:2.19
+        uses: docker://pandoc/latex:3.0
         with:
           args: --output=output/README_${{ steps.datetime.outputs.dt }}.html output/README.md
       - name: Convert into DOCX
-        uses: docker://pandoc/latex:2.19
+        uses: docker://pandoc/latex:3.0
         with:
           args: --output=output/README_${{ steps.datetime.outputs.dt }}.docx output/README.md
       - name: Eliminate intermediate markdown
