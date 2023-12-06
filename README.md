@@ -110,10 +110,10 @@ see `scripts/language_bytes.sh`.
 <details><summary>content of ./docs/en/PROPERTY.md</summary>
 
 - typing speed
-    - up to 5.5 type/sec
-    - can type 700 Japanese characters in 10 minutes
+  - up to 5.5 type/sec
+  - can type 700 Japanese characters in 10 minutes
 - have access to JetBrains products via [open-source license](https://www.jetbrains.com/ja-jp/community/opensource)
-    - applied repository: [GiganticMinecraft/SeichiAssist](https://github.com/GiganticMinecraft/SeichiAssist)
+  - applied repository: [GiganticMinecraft/SeichiAssist](https://github.com/GiganticMinecraft/SeichiAssist)
 
 </details>
 
@@ -146,10 +146,9 @@ see `scripts/language_bytes.sh`.
 - [sign-picture-ported](https://github.com/KisaragiEffective/sign-picture-ported) - alternate version of [Team-Fruit/SignPicture](https://github.com/Team-Fruit/SignPicture)
 
 #### for NeosVR
-* [DoNotIncludeDefaultResourceForSize](https://github.com/KisaragiEffective/DoNotIncludeDefaultResourceForSize) - exclude built-in fonts from displayed size
-* [EnableSitModeOnLaunch](https://github.com/KisaragiEffective/EnableSitModeOnLaunch) - turn on sit mode since launched
-* [NoPulseFromDisplayImpulse](https://github.com/KisaragiEffective/NoPulseFromDisplayImpulse) - turn off effect shown by Impulse's Display
-
+- [DoNotIncludeDefaultResourceForSize](https://github.com/KisaragiEffective/DoNotIncludeDefaultResourceForSize) - exclude built-in fonts from displayed size
+- [EnableSitModeOnLaunch](https://github.com/KisaragiEffective/EnableSitModeOnLaunch) - turn on sit mode since launched
+- [NoPulseFromDisplayImpulse](https://github.com/KisaragiEffective/NoPulseFromDisplayImpulse) - turn off effect shown by Impulse's Display
 
 </details>
 
