@@ -6,22 +6,21 @@
 
 ### Bytes of code in this account
 
-As of 2022-12-14:
+As of 2023-12-07 (JST):
 
 ```json
 {
-  "Kotlin": 575633,
-  "Rust": 355909,
+  "Kotlin": 558696,
+  "Rust": 513874,
   "JavaScript": 256181,
-  "TypeScript": 174825,
-  "HTML": 117376,
+  "TypeScript": 179146,
+  "HTML": 123272,
   "PHP": 90023,
   "Java": 65213,
-  "SCSS": 65070,
-  "Scala": 16115,
+  "SCSS": 65091,
   "Blade": 11591,
-  "C#": 9590,
-  "Shell": 5123,
+  "Scala": 9457,
+  "Shell": 7691,
   "CSS": 1528,
   "PowerShell": 779,
   "Dockerfile": 748,
