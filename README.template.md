@@ -8,26 +8,9 @@
 
 As of 2022-12-14:
 
-```json
-{
-  "Kotlin": 575633,
-  "Rust": 355909,
-  "JavaScript": 256181,
-  "TypeScript": 174825,
-  "HTML": 117376,
-  "PHP": 90023,
-  "Java": 65213,
-  "SCSS": 65070,
-  "Scala": 16115,
-  "Blade": 11591,
-  "C#": 9590,
-  "Shell": 5123,
-  "CSS": 1528,
-  "PowerShell": 779,
-  "Dockerfile": 748,
-  "Procfile": 52
-}
-```
+{{include|./components/international/hack_code_ref_start_json.txt}}
+{{include|./components/international/language_statistics.json}}
+{{include|./components/international/hack_code_ref_end.txt}}
 
 <details><summary>Method</summary>
 
