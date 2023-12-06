@@ -40,7 +40,7 @@ jobs:
       - name: Download preprocessor
         env:
           # renovate: KisaragiEffective/markdown-template-preprocessor
-          PREPROCESSOR_VERSION: "0.1.2"
+          PREPROCESSOR_VERSION: "0.1.4"
         run: |
           ./fetch_preprocessor.sh
       - name: Run preprocessor
