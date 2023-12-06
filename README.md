@@ -77,7 +77,7 @@ see `scripts/language_bytes.sh`.
 - other languages: via machine translate
 
 ## Skills
-<details><summary>content of ./docs/en/SKILL.md</summary>
+<details><summary>content of ./components/en/SKILL.md</summary>
 
 ### Programming languages
 - Java, Kotlin, Scala: production level
@@ -107,7 +107,7 @@ see `scripts/language_bytes.sh`.
 </details>
 
 ## Properties
-<details><summary>content of ./docs/en/PROPERTY.md</summary>
+<details><summary>content of ./components/en/PROPERTY.md</summary>
 
 - typing speed
   - up to 5.5 type/sec
@@ -125,7 +125,7 @@ see `scripts/language_bytes.sh`.
 - [scala-simd-wrapper](https://github.com/KisaragiEffective/scala-simd-wrapper)
 
 ### Product
-<details><summary>content of ./docs/en/PRODUCT.md</summary>
+<details><summary>content of ./components/en/PRODUCT.md</summary>
 
 ### Standalone
 #### Working

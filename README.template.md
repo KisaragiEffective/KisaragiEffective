@@ -77,10 +77,10 @@ see `scripts/language_bytes.sh`.
 - other languages: via machine translate
 
 ## Skills
-{{link or include|./docs/en/SKILL.md}}
+{{link or include|./components/en/SKILL.md}}
 
 ## Properties
-{{link or include|./docs/en/PROPERTY.md}}
+{{link or include|./components/en/PROPERTY.md}}
 
 ## Repos
 - [gist](https://gist.github.com/KisaragiEffective)
@@ -90,7 +90,7 @@ see `scripts/language_bytes.sh`.
 - [scala-simd-wrapper](https://github.com/KisaragiEffective/scala-simd-wrapper)
 
 ### Product
-{{link or include|./docs/en/PRODUCT.md}}
+{{link or include|./components/en/PRODUCT.md}}
 
 ## Notes
 - [ksrgte.ch](https://services.ksrgte.ch) is my domain.
