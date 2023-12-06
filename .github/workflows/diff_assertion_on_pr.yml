@@ -18,7 +18,7 @@ jobs:
       - name: Download preprocessor
         env:
           # renovate: KisaragiEffective/markdown-template-preprocessor
-          PREPROCESSOR_VERSION: "0.1.4"
+          PREPROCESSOR_VERSION: "0.1.5"
         run: |
           ./fetch_preprocessor.sh
       - name: make temporary
