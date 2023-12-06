@@ -1,7 +1,12 @@
 #!/bin/bash
 
-if [[ -t 0 && -z "$GH_PAT" ]]; then
-  read -rsp 'Please input GitHub Personal Access Token: ' GH_PAT
+if [[ -z "$GH_PAT" ]]; then
+  if [[ -t 0 ]]; then
+    read -rsp 'Please input GitHub Personal Access Token: ' GH_PAT
+  else
+    echo 'Please specify Personal Access Token via $GH_PAT.'
+    exit 1
+  fi
 fi
 
 build_query() {
