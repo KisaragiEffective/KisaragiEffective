@@ -14,10 +14,11 @@ jobs:
     name: Check hash
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Download preprocessor
         env:
-          PREPROCESSOR_VERSION: "0.1.2"
+          # renovate: KisaragiEffective/markdown-template-preprocessor
+          PREPROCESSOR_VERSION: "0.1.4"
         run: |
           ./fetch_preprocessor.sh
       - name: make temporary

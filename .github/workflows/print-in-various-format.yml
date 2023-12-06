@@ -26,7 +26,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: prepare output directory
         run: |
           mkdir output
@@ -39,22 +39,23 @@ jobs:
         # TODO: このステップを独立したアクションに分割して依存させる
       - name: Download preprocessor
         env:
-          PREPROCESSOR_VERSION: "0.1.2"
+          # renovate: KisaragiEffective/markdown-template-preprocessor
+          PREPROCESSOR_VERSION: "0.1.4"
         run: |
           ./fetch_preprocessor.sh
       - name: Run preprocessor
         run: |
           ./markdown-template-preprocessor -i ./README.template.md -o ./output/README.md -m static
       - name: Convert into PDF
-        uses: docker://pandoc/latex:2.19
+        uses: docker://pandoc/latex:3.1
         with:
           args: --output=output/README_${{ steps.datetime.outputs.dt }}.pdf output/README.md
       - name: Convert into HTML
-        uses: docker://pandoc/latex:2.19
+        uses: docker://pandoc/latex:3.1
         with:
           args: --output=output/README_${{ steps.datetime.outputs.dt }}.html output/README.md
       - name: Convert into DOCX
-        uses: docker://pandoc/latex:2.19
+        uses: docker://pandoc/latex:3.1
         with:
           args: --output=output/README_${{ steps.datetime.outputs.dt }}.docx output/README.md
       - name: Eliminate intermediate markdown
