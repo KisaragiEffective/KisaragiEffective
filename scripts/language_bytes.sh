@@ -14,14 +14,6 @@ build_query() {
   fi
 }
 
-get_current_user() {
-  curl -H "Authorization: Bearer $GH_PAT" \
-    -H "Accept: application/vnd.github+json" \
-    -H "User-Agent: KisaragiEffective/KisaragiEffective.LanguageStatistics" \
-    https://api.github.com/user | \
-  jq '.login'
-}
-
 merge_response() {
   jq -s \ |
     jq '[.[] | to_entries[]] | group_by(.key) | map({ (.[0].key): [.[].value] | add }) | add'
@@ -29,7 +21,7 @@ merge_response() {
 
 do_request() {
   curl -H "Authorization: Bearer $GH_PAT" \
-    -H "User-Agent: KisaragiEffective/KisaragiEffective.LanguageStatistics (Runned by $(get_current_user)'s token, code is from https://github.com/KisaragiEffective/KisaragiEffective)" \
+    -H "User-Agent: KisaragiEffective/KisaragiEffective.LanguageStatistics (code is from https://github.com/KisaragiEffective/KisaragiEffective)" \
     -d@- \
     https://api.github.com/graphql
 }
