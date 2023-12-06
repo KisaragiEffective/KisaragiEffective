@@ -6,9 +6,9 @@ fi
 
 build_query() {
   if [[ -z "$next_cursor" ]]; then
-    printf 'query { \nviewer { \nlogin\nrepositories(first: 100, isFork: false, privacy: PUBLIC) {\nnodes {\nname\nprimaryLanguage {\nname\n}\nlanguages(first: 100) {\nedges {\nnode {\nname\ncolor\n}\nsize\n}\n}\n\n}\ntotalDiskUsage\npageInfo {\nendCursor\nstartCursor\nhasNextPage\n}\ntotalCount\n}\n}\n}'
+    printf 'query { \nuser(login: \"KisaragiEffective\") { \nlogin\nrepositories(first: 100, isFork: false, privacy: PUBLIC) {\nnodes {\nname\nprimaryLanguage {\nname\n}\nlanguages(first: 100) {\nedges {\nnode {\nname\ncolor\n}\nsize\n}\n}\n\n}\ntotalDiskUsage\npageInfo {\nendCursor\nstartCursor\nhasNextPage\n}\ntotalCount\n}\n}\n}'
   else
-    printf 'query { \nviewer { \nlogin\nrepositories(first: 100, isFork: false, privacy: PUBLIC, after: '
+    printf 'query { \nuser(login: \"KisaragiEffective\") { \nlogin\nrepositories(first: 100, isFork: false, privacy: PUBLIC, after: '
     printf '"%s"' "$next_cursor"
     printf ') {\nnodes {\nname\nprimaryLanguage {\nname\n}\nlanguages(first: 100) {\nedges {\nnode {\nname\ncolor\n}\nsize\n}\n}\n\n}\ntotalDiskUsage\npageInfo {\nendCursor\nstartCursor\nhasNextPage\n}\ntotalCount\n}\n}\n}'
   fi
