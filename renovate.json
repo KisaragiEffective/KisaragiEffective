@@ -1,5 +1,15 @@
 {
   "extends": [
     "config:base"
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["(^|/)\\.github/workflows/[^/]+\\.yml$"],
+      "matchStrings": ["#\\s?renovate: KisaragiEffective/markdown-template-preprocessor\\s*PREPROCESSOR_VERSION:\\s*\"(?<currentValue>\\d\\.\\d+\\.\\d+)\""],
+      "lookupNameTemplate": "KisaragiEffective/markdown-template-preprocessor",
+      "depNameTemplate": "KisaragiEffective/markdown-template/preprocessor",
+      "datasourceTemplate": "github-releases"
+    }
   ]
 }
