@@ -6,7 +6,7 @@
 
 ### Bytes of code in this account
 
-As of 2022-12-14:
+As of {{include|./components/international/language_statistics_update_date.txt}}:
 
 {{include|./components/international/hack_code_ref_start_json.txt}}
 {{include|./components/international/language_statistics.json}}
