@@ -4,7 +4,7 @@ if [[ -z "$GH_PAT" ]]; then
   if [[ -t 0 ]]; then
     read -rsp 'Please input GitHub Personal Access Token: ' GH_PAT
   else
-    echo 'Please specify Personal Access Token via $GH_PAT.'
+    echo 'Please specify Personal Access Token via $GH_PAT.' >&2
     exit 1
   fi
 fi
@@ -47,7 +47,7 @@ export next_cursor=""
 export res_acc=""
 
 while true; do
-  echo "query: $(build_query)"
+  echo "query: $(build_query)" >&2
   res="$(build_query | raw_to_json | do_request)"
   res_acc="$res_acc$(echo)$(echo "$res" | fmt)"
   has_next=$(echo "$res" | jq 'if .data.user.repositories.pageInfo.hasNextPage then 1 else 0 end')
@@ -55,7 +55,7 @@ while true; do
     break
   else
     next_cursor="$(echo "$res" | jq -r '.data.user.repositories.pageInfo.endCursor')"
-    echo "next: $next_cursor"
+    echo "next: $next_cursor" >&2
   fi
 done
 echo "$res_acc" | merge_response | sort_by_desc
