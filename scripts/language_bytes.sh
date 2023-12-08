@@ -36,7 +36,7 @@ raw_to_json() {
 }
 
 fmt() {
-  jq '[[.data.user.repositories.nodes[] | .languages.edges[] | {"key": .node.name, "value": .size}] | group_by(.key)[] | {(.[0].key): [.[] | .value] | add}] | reduce .[] as $item ({}; . * $item)'
+  jq --argjson ex "$exclude_json" '[[.data.user.repositories.nodes[] | select(.name as $name | $ex | all(. != $name)) | .languages.edges[] | {"key": .node.name, "value": .size}] | group_by(.key)[] | {(.[0].key): [.[] | .value] | add}] | reduce .[] as $item ({}; . * $item)'
 }
 
 sort_by_desc() {
@@ -46,10 +46,12 @@ sort_by_desc() {
 export next_cursor=""
 export res_acc=""
 
+raw="$(mktemp)"
+exclude_json="$(jq -c '.target | map(.repository)' < "$(dirname "$0")/../components/international/language_statistics_ignore.json")"
 while true; do
   echo "query: $(build_query)" >&2
   res="$(build_query | raw_to_json | do_request)"
-  res_acc="$res_acc$(echo)$(echo "$res" | fmt)"
+  res_acc="$res_acc$(echo)$(echo "$res" | tee -a "$raw" | fmt)"
   has_next=$(echo "$res" | jq 'if .data.user.repositories.pageInfo.hasNextPage then 1 else 0 end')
   if [[ "$has_next" -eq '0' ]]; then
     break
@@ -58,6 +60,8 @@ while true; do
     echo "next: $next_cursor" >&2
   fi
 done
+echo "raw data: $raw" >&2
+echo "excluded: $exclude_json" >&2
 echo "$res_acc" | merge_response | sort_by_desc
 unset res_acc
 unset next_cursor

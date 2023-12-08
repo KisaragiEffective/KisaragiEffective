@@ -10,24 +10,18 @@ As of 2023-12-08 (JST):
 
 ```json
 {
-  "Rust": 678122,
-  "Kotlin": 558696,
-  "Java": 371604,
-  "JavaScript": 258062,
-  "TypeScript": 179146,
-  "Shell": 149959,
-  "HTML": 147981,
-  "PHP": 90023,
+  "Rust": 666722,
+  "Kotlin": 369699,
+  "Shell": 148402,
+  "Java": 88631,
   "Scala": 81298,
-  "SCSS": 65091,
+  "HTML": 56633,
   "C#": 20112,
-  "Lean": 12998,
-  "Blade": 11591,
-  "Python": 3488,
+  "JavaScript": 2927,
+  "PHP": 2019,
   "PowerShell": 1944,
-  "Dockerfile": 1606,
-  "CSS": 1528,
-  "Makefile": 1499,
+  "CSS": 1296,
+  "Dockerfile": 748,
   "Ruby": 650,
   "Procfile": 52
 }

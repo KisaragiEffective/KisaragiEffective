@@ -1,0 +1,16 @@
+{
+  "target": [
+    { "repository": "icfp20main-p38-p-archive-copy", "reason": "mirror" },
+    { "repository": "git-playground", "reason": "sandbox" },
+    { "repository": "sdl2-practice", "reason": "sandbox" },
+    { "repository": "discord-healthy-person-emulator-shorten-bot", "reason":  "mirror" },
+    { "repository": "yet-another-argument-parser", "reason": "not-ready" },
+    { "repository": "KuinOnRust", "reason": "non-functional" },
+    { "repository": "ajd4jp-mirror", "reason": "mirror" },
+    { "repository": "cerke_online_alpha", "reason": "likely:github-bug" },
+    { "repository": "webmarket", "reason": "non-functional" },
+    { "repository": "sweetalert2", "reason": "likely:github-bug" },
+    { "repository": "kisaragilib.kt", "reason": "mostly:generated-code" },
+    { "repository": "seichi-api-experimental", "reason": "non-functional" }
+  ]
+}
