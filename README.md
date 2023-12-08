@@ -6,25 +6,29 @@
 
 ### Bytes of code in this account
 
-As of 2022-12-14:
+As of 2023-12-08 (JST):
 
 ```json
 {
-  "Kotlin": 575633,
-  "Rust": 355909,
-  "JavaScript": 256181,
-  "TypeScript": 174825,
-  "HTML": 117376,
+  "Rust": 678122,
+  "Kotlin": 558696,
+  "Java": 371604,
+  "JavaScript": 258062,
+  "TypeScript": 179146,
+  "Shell": 149959,
+  "HTML": 147981,
   "PHP": 90023,
-  "Java": 65213,
-  "SCSS": 65070,
-  "Scala": 16115,
+  "Scala": 81298,
+  "SCSS": 65091,
+  "C#": 20112,
+  "Lean": 12998,
   "Blade": 11591,
-  "C#": 9590,
-  "Shell": 5123,
+  "Python": 3488,
+  "PowerShell": 1944,
+  "Dockerfile": 1606,
   "CSS": 1528,
-  "PowerShell": 779,
-  "Dockerfile": 748,
+  "Makefile": 1499,
+  "Ruby": 650,
   "Procfile": 52
 }
 ```
