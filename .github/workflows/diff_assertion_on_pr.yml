@@ -26,7 +26,7 @@ jobs:
           mkdir output
       - name: Run preprocessor
         run: |
-          ./markdown-template-preprocessor -i ./README.template.md -o ./output/README.md -m spoiler
+          ./scripts/render_live.sh
       - name: Compare hash
         id: compare-hash
         run: |
