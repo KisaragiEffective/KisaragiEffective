@@ -1,4 +1,8 @@
 # KisaragiEffective
+## 求人のスカウト
+求人のスカウトは私が登録した求人プラットフォームを通じて送信するか、あるいは`kisaragi.effective+jobs.handler@gmail.com`に送るものとします。
+2024年4月21日0時0分 (日本時間) から、自動化されたスカウトへの対策として、それ以外のメールアドレスまたはダイレクトメッセージなどの送信者と私のみが閲覧可能な経路で受信した場合、基礎費用として10万円、加えてメール本文の文字数×105.86円 (端数切り上げ) を送信した者あるいは送信した企業に請求するものとします。なお、ここで言う「文字数」とは、本文をUnicodeのグリフの列として見たとき、そのグリフの列に含まれるコードポイントの数を指すものとします。
+
 ## Stats
 
 [![github stats](https://github-readme-stats.vercel.app/api?username=KisaragiEffective&count_private=true&show_icons=true&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
