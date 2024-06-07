@@ -10,6 +10,7 @@ on:
       - "**.md"
       - ".github/workflows/print-in-various-format.yml"
     branches: [ live ]
+  pull_request:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -67,6 +68,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           custom_tag: ${{ env.CURDAYTIME }}
+        if: ${{ github.ref == 'ref/heads/live' }}
       - name: Create release
         uses: ncipollo/release-action@v1
         with:
@@ -76,3 +78,4 @@ jobs:
           tag: ${{ steps.tag_version.outputs.new_tag }}
           name: Release ${{ steps.tag_version.outputs.new_tag }}
           body: ${{ steps.tag_version.outputs.changelog }}
+        if: ${{ github.ref == 'ref/heads/live' }}
