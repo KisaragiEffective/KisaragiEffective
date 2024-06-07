@@ -1,5 +1,6 @@
 # KisaragiEffective
 ## About scouting policy
+
 ```scala
 val (t, f) = scoutsStream().partition(s => {
   s.source.registeredBy(this) || (s.from[Email] && s.recipient == "kisaragi.effective+jobs.handler@gmail.com")
