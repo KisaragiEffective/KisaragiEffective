@@ -17,7 +17,7 @@
       "matchPackageName": ["pandoc/latex"],
       "description": "誤検知防止: Renovateのバグだと思われるが他の症例がなく不明: https://github.com/renovatebot/renovate/discussions/29503",
       "matchNewValue": "1\\.13",
-      "matchManagers": ["docker"],
+      "matchManagers": ["dockerfile"],
       "enabled": false
     }
   ]
