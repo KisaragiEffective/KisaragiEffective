@@ -42,3 +42,5 @@ jobs:
           fi
 
           gh pr comment "${{ github.event.pull_request.html_url }}" -b "$output" 
+        env:
+          GH_TOKEN: ${{ github.token }}
