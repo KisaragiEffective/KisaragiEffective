@@ -15,8 +15,8 @@ f.foreach { s =>
 
 ## Stats
 
-[![github stats](https://github-readme-stats.vercel.app/api?username=KisaragiEffective&count_private=true&show_icons=true&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
-[![languages](https://github-readme-stats.vercel.app/api/top-langs/?username=KisaragiEffective&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
+[![GitHub Stats](https://github-stats-extended.vercel.app/api?username=KisaragiEffective&include_all_commits=true&disable_animations=true&theme=github_dark)](https://github-stats-extended.vercel.app/api?username=KisaragiEffective&include_all_commits=true&disable_animations=true&theme=github_dark)
+[![GitHub Stats](https://github-stats-extended.vercel.app/api/top-langs?username=KisaragiEffective&langs_count=5&disable_animations=true&theme=github_dark)](https://github-stats-extended.vercel.app/api/top-langs?username=KisaragiEffective&langs_count=5&disable_animations=true&theme=github_dark)
 
 ### Bytes of code in this account
 
