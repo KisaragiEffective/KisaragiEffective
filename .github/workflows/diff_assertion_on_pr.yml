@@ -16,7 +16,7 @@ jobs:
     name: Check hash
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.4.0
+        uses: actions/checkout@v7.0.1
       - name: Download preprocessor
         env:
           # renovate: KisaragiEffective/markdown-template-preprocessor
