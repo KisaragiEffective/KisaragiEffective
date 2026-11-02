@@ -1,3 +1,5 @@
+# This workflow is managed by gh actions-lock.
+
 name: SHA512 check
 on:
   pull_request:
@@ -14,7 +16,7 @@ jobs:
     name: Check hash
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.4.0
       - name: Download preprocessor
         env:
           # renovate: KisaragiEffective/markdown-template-preprocessor
