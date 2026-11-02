@@ -1,3 +1,4 @@
+# This workflow is managed by gh actions-lock.
 # This is a basic workflow to help you get started with Actions
 
 name: Print out
@@ -27,7 +28,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4.4.0
       - name: prepare output directory
         run: |
           mkdir output
@@ -70,7 +71,7 @@ jobs:
           custom_tag: ${{ env.CURDAYTIME }}
         if: ${{ github.ref == 'ref/heads/live' }}
       - name: Create release
-        uses: ncipollo/release-action@v1
+        uses: ncipollo/release-action@v1.21.0
         with:
           artifacts: 'output/*'
           token: ${{ secrets.GITHUB_TOKEN }}
