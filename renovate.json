@@ -12,5 +12,11 @@
       "datasourceTemplate": "github-releases"
     }
   ],
-  "packageRules": []
+  "packageRules": [
+    {
+      "matchManagers": ["github-actions"],
+      "matchDatasources": ["docker"],
+      "pinDigests": true
+    }
+  ]
 }
