@@ -5,7 +5,7 @@ version: 'v0.0.3'
 workflows:
     '.github/workflows/actionlint.yml':
         - 'actions/checkout@v7.0.1'
-        - 'reviewdog/action-actionlint@v1.81.1'
+        - 'reviewdog/action-actionlint@v1.81.2'
     '.github/workflows/diff_assertion_on_pr.yml':
         - 'actions/checkout@v7.0.1'
     '.github/workflows/markdown-lint.yml':
@@ -44,8 +44,8 @@ dependencies:
         commit: 'sha1-339a81892b84b4eeb0f6e744e4574d79d0d9b8dd'
         owner_id: 5712756
         repo_id: 204020546
-    'reviewdog/action-actionlint@v1.81.1':
-        ref: 'v1.81.1'
-        commit: 'sha1-619a81ec64ff8c0211cd6146eb2b21e8f1d7f440'
+    'reviewdog/action-actionlint@v1.81.2':
+        ref: 'v1.81.2'
+        commit: 'sha1-7abf25e1607ec65838b73d0484ff31f8e9499d80'
         owner_id: 48765237
         repo_id: 385059686
